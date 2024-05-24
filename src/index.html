@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- main div -->
+    <div class="font-roboto ">
+        <!-- header -->
+        <header class="fixed w-full top-0">
+            <!-- header components container -->
+            <div class="flex flex-row justify-between">
+                <!-- left container -->
+                <div class="flex flex-row">
+                    <!-- hamburger container -->
+                    <div>
+                        <img src="../assets/hamburger.png" class="h-6 w-6 mt-5 ml-6" alt="">
+                    </div>
+                    <!-- logo container -->
+                    <div>
+                        <img src="../assets/yt-full.png" class="h-9 mt-3.5 ml-8" alt="">
+                    </div>
+                </div>
+                <!-- search container -->
+                <div class="flex flex-row mt-2 mb-2">
+                    <!-- search bar -->
+                    <div class="flex flex-row justify-left gap-5  rounded-[25px] w-[480px]">
+                        <input type="text" class="rounded-[25px] w-[430px] border-[1px] border-gray-400 " >
+                        <div class="flex flex-row ">
+                            <button class="h-12 w-12 rounded-[50px] bg-gray-200 flex justify-center items-center">
+                                <img src="../assets/search.png" class="h-7" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- mic button -->
+                    <div class="h-12 w-12 rounded-[50px] flex items-center justify-center bg-gray-200 ml-5">
+                        <img src="../assets/mic.png" class="h-5 w-5">
+                    </div>
+                </div>
+                <!-- right side container -->
+                <div class="flex flex-row justify-left items-center gap-8 mr-8">
+                    <!-- video button -->
+                    <div>
+                        <img src="../assets/camera.png" class="h-6 w-6" alt="">
+                    </div>
+                    <!-- notification icon -->
+                    <div>
+                        <img src="../assets/notification.png" class="h-5 w-5" alt="">
+                    </div>
+                    <!-- profile icon -->
+                    <div class="rounded-[50px]">
+                        <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- top header ends -->
+
+        <!-- main content -->
+        <div class="flex flex-row">
+            <!-- sidebar -->
+            <div class="flex flex-col gap-8 w-20 fixed h-full top-16">
+                <!-- home -->
+                <div class="flex flex-col justify-center items-center mt-4">
+                    <img src="../assets/home.png" class="h-6 w-6" alt="">
+                    <p class="text-xs">Home</p>
+                </div>
+
+                <!-- shorts -->
+                <div class="flex flex-col justify-center items-center mt-4">
+                    <img src="../assets/shorts.png" class="h-6 w-6" alt="">
+                    <p class="text-xs">Shorts</p>
+                </div>
+
+                <!-- subscription -->
+                <div class="flex flex-col justify-center items-center mt-4">
+                    <img src="../assets/subs.png" class="h-6 w-6" alt="">
+                    <p class="text-xs">Subscriptions</p>
+                </div>
+
+                <!-- library -->
+                <div class="flex flex-col justify-center items-center mt-4">
+                    <img src="../assets/lib.png" class="h-6 w-6" alt="">
+                    <p class="text-xs">Library</p>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="fixed top-16 left-20 w-[100%]">
+                <!-- tags section -->
+                <div class="flex flex-row justify-between w-full mt-4 ml-6">
+                     <!-- tags -->
+                     <div class="flex flex-row gap-4 text-sm font-semibold">
+                        <div class="bg-gray-100 rounded-md px-3 py-1">All</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Recently Uploaded</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Music</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Comedy</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Education</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">News</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Entertainment</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Technology</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Science</div> 
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Valorant</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">API</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Computer Programming</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">Doraemon</div>
+                        <div class="bg-gray-100 rounded-md px-3 py-1">India</div>
+                     </div>
+                </div>
+                <!-- videos -->
+                <div class="flex flex-col justify-between w-full mt-8 ml-6">
+                    <!-- video row 1 -->
+                    <div class="flex flex-row gap-10 ">
+                        <!-- video 1 -->
+                        <div class="w-80 h-60  rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 2 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 3 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 4 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- video row 2 -->
+                    <div class="flex flex-row gap-10 mt-12">
+                        <!-- video 1 -->
+                        <div class="w-80 h-60  rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 2 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 3 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- video 4 -->
+                        <div class="w-80 h-60 rounded-xl ">
+                            <img src="../assets/thumbnail-1.png" class="rounded-xl" alt="">
+                            <!-- description container -->
+                            <div class="flex flex-row my-3">
+                                <!-- channel image -->
+                                <div class="rounded-[50px]">
+                                    <img src="../assets/profile.png" class="h-10 w-10 rounded-[50px]" alt="">
+                                </div>
+                                <!-- video title -->
+                                <div class="ml-1">
+                                    <p class="font-semibold mb-1">Best Youtube Thumbnails 2023</p>
+                                    <p class="text-sm text-gray-600">YT thumbnail tutorials</p>
+                                    <p class="text-sm text-gray-600">70K views • 1 year ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
